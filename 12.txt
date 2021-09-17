@@ -1,0 +1,37 @@
+ public static int fx(int x) {
+        Scanner input = new Scanner(System.in);
+
+        x = input.nextInt();
+
+        if (x < 0) {
+            return (int) (Math.pow(x, 2) + 2 * x + 3);
+        } else if (x == 0) {
+            return 0;
+        } else {
+            return x - 2;
+        }
+
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println(fx(0));
+------------------------------------------------------------
+public static float Distance(int x1, int y1, int z1, int x2, int y2, int z2) {
+        Scanner input = new Scanner(System.in);
+
+        x1 = input.nextInt();
+        y1 = input.nextInt();
+        z1 = input.nextInt();
+        x2 = input.nextInt();
+        y2 = input.nextInt();
+        z2 = input.nextInt();
+
+        return (float) (Math.sqrt(Math.pow(Math.abs(z2 - z1), 2) + Math.pow(Math.abs(y2 - y1), 2) + Math.pow(Math.abs(x2 - x1), 2)));
+
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println(Distance(0, 0, 0, 0, 0, 0));
+--------------------------------------------------------------------
